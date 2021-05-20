@@ -12,7 +12,7 @@ web design of Vimeo
 ## Installation
 
 First, clone this repo.
-Second, cd vimeo_dev
+#Second, cd vimeo_dev
 
 Then 
 `npm install`
