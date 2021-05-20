@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="bg-blue-1000 font-sans text-base lining-nums">
+    <header class="sticky inset-x-0 top-0 left-0 z-40">
+      <nav class="bg-blue-1000">
+        <div class="mx-auto px-2 sm:px-6 lg:px-8">
+          <div
+            class="
+              relative
+              flex
+              justify-between
+              items-center
+              md:flex-start
+              h-16
+              md:justify-between
+            "
+          >
+            <!-- Mobile menu button-->
+            <div class="flex">
+              <button
+                type="button"
+                class="
+                  inline-flex
+                  p-2
+                  rounded-md
+                  text-gray-400
+                  lg:p-4
+                  lg:hidden
+                "
+                aria-controls="mobile-menu"
+                aria-expanded="false"
+              >
+                <span class="sr-only">Open main menu</span>
+
+                <svg
+                  class="block h-7 w-6 lg:hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                </svg>
+              </button>
+              <svg
+                width="109"
+                height="40"
+                viewBox="0 0 109 31"
+                class="pb-2 mx-auto md:m-1 md:pb-2"
+              >
+                <path
+                  d="M88.24 23.443a11.978 11.978 0 01-.054-.678c-.184-3.124.947-5.995 3.394-8.61 2.627-2.905 5.929-4.358 9.908-4.358 2.553 0 4.487.855 5.801 2.561 1.242 1.563 1.807 3.578 1.698 6.047-.147 3.342-1.387 6.23-3.723 8.663-2.335 2.434-5.237 3.65-8.704 3.65-2.882 0-5.072-.926-6.568-2.78a7.757 7.757 0 01-.871-1.372 34.1 34.1 0 01-1.235.727c-3.868 2.217-7.792 3.323-11.769 3.323-2.956 0-5.074-.982-6.35-2.945a7.353 7.353 0 01-.266-.422 21.55 21.55 0 01-.117.103c-2.446 2.108-4.89 3.162-7.335 3.162-2.374 0-3.522-1.307-3.45-3.926.036-1.164.265-2.562.684-4.198.42-1.636.648-2.909.685-3.818.037-1.38-.384-2.073-1.264-2.073-.952 0-2.086 1.13-3.404 3.384-1.392 2.365-2.144 4.656-2.252 6.874-.074 1.566.08 2.767.46 3.603-2.546.073-4.33-.346-5.348-1.256-.911-.8-1.33-2.126-1.255-3.983a14.67 14.67 0 01.537-3.492c.321-1.164.5-2.2.537-3.11.074-1.347-.42-2.02-1.48-2.02-.915 0-1.902 1.038-2.96 3.111-1.06 2.073-1.645 4.239-1.754 6.494-.073 2.037.058 3.455.392 4.256-2.505.073-4.284-.454-5.337-1.58-.48-.518-.817-1.185-1.01-2.002-.205.194-.415.386-.631.574-2.446 2.108-4.89 3.162-7.335 3.162-1.133 0-2-.363-2.601-1.09-.602-.728-.885-1.672-.848-2.836.035-1.199.41-3.053 1.121-5.562.712-2.508 1.069-3.854 1.069-4.036 0-.944-.33-1.417-.985-1.417-.207 0-.77.34-1.69 1.016-.693 2.067-2.205 4.595-4.535 7.584-3.315 4.295-6.119 6.443-8.413 6.443-1.42 0-2.624-1.307-3.606-3.924L5.41 19.497c-.73-2.615-1.512-3.924-2.349-3.924-.182 0-.82.383-1.913 1.145L0 15.244a309.082 309.082 0 003.558-3.163c1.604-1.383 2.809-2.11 3.612-2.183 1.897-.182 3.065 1.111 3.503 3.88.474 2.986.802 4.844.986 5.57.547 2.479 1.148 3.716 1.806 3.716.51 0 1.276-.803 2.298-2.41 1.021-1.608 1.568-2.831 1.642-3.672.146-1.387-.401-2.082-1.642-2.082-.583 0-1.185.134-1.804.399 1.198-3.914 3.487-5.814 6.866-5.706 2.256.066 3.438 1.387 3.546 3.961L26 12.081c1.57-1.383 2.738-2.11 3.506-2.183 1.203-.109 2.088.244 2.654 1.06.564.816.774 1.875.63 3.18-.475 2.212-.987 5.02-1.534 8.425-.037 1.56.53 2.338 1.697 2.338.51 0 1.422-.537 2.737-1.615l.049-.04c.083-.76.218-1.662.405-2.708.3-1.687.468-3 .504-3.945.072-.652-.093-.979-.493-.979-.22 0-.84.369-1.862 1.104l-1.314-1.473c.183-.144 1.331-1.2 3.45-3.164 1.532-1.418 2.572-2.145 3.119-2.182.949-.073 1.715.318 2.299 1.172.584.855.876 1.847.876 2.974 0 .364-.036.71-.108 1.037a10.044 10.044 0 011.916-2.183c1.678-1.455 3.558-2.274 5.638-2.456 1.788-.145 3.064.273 3.833 1.255.619.8.91 1.947.875 3.438a73.7 73.7 0 00.822-.71c.838-.982 1.659-1.763 2.462-2.345 1.35-.982 2.756-1.528 4.215-1.638 1.752-.145 3.01.271 3.777 1.25.656.798.949 1.94.877 3.424-.037 1.015-.284 2.492-.74 4.431-.457 1.94-.684 3.052-.684 3.342-.037.763.037 1.287.22 1.577.181.29.618.434 1.313.434.311 0 .773-.2 1.385-.602a9.877 9.877 0 01-.072-1.43c.035-2.945 1.35-5.745 3.942-8.401 2.845-2.909 6.203-4.365 10.072-4.365 3.576 0 5.474 1.453 5.693 4.355.145 1.85-.877 3.755-3.065 5.715-2.337 2.142-5.276 3.502-8.815 4.082.656.908 1.641 1.36 2.956 1.36 2.627 0 5.492-.664 8.596-1.997.138-.058.274-.117.408-.175zm14.56-5.244c.038-.984-.1-1.886-.41-2.706-.31-.82-.758-1.23-1.341-1.23-1.862 0-3.395 1.002-4.597 3.007-1.024 1.64-1.571 3.39-1.643 5.247-.037.912.128 1.714.492 2.406.4.803.966 1.203 1.697 1.203 1.642 0 3.048-.965 4.216-2.898.985-1.604 1.513-3.28 1.587-5.029zm-21.1-1.834c.035-.976-.365-1.465-1.203-1.465-1.094 0-2.204.751-3.334 2.253-1.13 1.502-1.713 2.94-1.748 4.315-.021 0-.021.236 0 .706a12.322 12.322 0 004.645-2.985c1.056-1.157 1.603-2.1 1.64-2.824zM34.651 2.714c-.036.906-.492 1.775-1.369 2.607-.985.941-2.153 1.412-3.503 1.412-2.08 0-3.084-.905-3.011-2.715.035-.94.592-1.846 1.669-2.715C29.513.435 30.708 0 32.023 0c.766 0 1.405.3 1.917.896.51.598.747 1.204.711 1.818z"
+                  fill="#1A2E3A"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+
+              <div
+                class="
+                  hidden
+                  lg:flex
+                  flex-1
+                  items-center
+                  justify-center
+                  lg:items-stretch
+                  lg:justify-start
+                "
+              >
+                <div class="flex-shrink-0 flex items-center w-9/12">
+                  <ul class="w-full flex">
+                    <li class="px-3">
+                      <a
+                        href=""
+                        class="
+                          block
+                          text-sm
+                          font-bold
+                          cursor-pointer
+                          text-blue-1200
+                          no-underline
+                        "
+                        >Why Vimeo?</a
+                      >
+                    </li>
+                    <li class="px-3">
+                      <a
+                        href=""
+                        class="
+                          block
+                          text-sm
+                          font-bold
+                          cursor-pointer
+                          text-blue-1200
+                          no-underline
+                        "
+                        >Features</a
+                      >
+                    </li>
+                    <li class="px-3">
+                      <a
+                        href=""
+                        class="
+                          block
+                          text-sm
+                          font-bold
+                          cursor-pointer
+                          text-blue-1200
+                          no-underline
+                        "
+                        >Resources</a
+                      >
+                    </li>
+                    <li class="px-3">
+                      <a
+                        href=""
+                        class="
+                          block
+                          text-sm
+                          font-bold
+                          cursor-pointer
+                          text-blue-1200
+                          no-underline
+                        "
+                        >Watch</a
+                      >
+                    </li>
+                    <li class="pl-3">
+                      <a
+                        href=""
+                        class="
+                          block
+                          text-sm
+                          font-bold
+                          cursor-pointer
+                          text-blue-1200
+                          no-underline
+                        "
+                        >Pricing</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="flex">
+              <div class="flex items-center pr-2">
+                <div class="relative px-5 flex xl: divide-x-2 divide-x-reverse">
+                  <a href="/" class="hidden md:block no-underline w-full">
+                    <svg width="15" height="40" class="pt-3">
+                      <g fill="#1A2E3A" fill-rule="evenodd">
+                        <path
+                          d="M10.892 10l4.014 4.459-.891.803L10 10.802z"
+                        ></path>
+                        <path
+                          d="M6.5 11.817A5.327 5.327 0 0011.817 6.5 5.327 5.327 0 006.5 1.183 5.327 5.327 0 001.183 6.5 5.327 5.327 0 006.5 11.817zM6.5 13A6.51 6.51 0 010 6.5 6.51 6.51 0 016.5 0 6.51 6.51 0 0113 6.5 6.51 6.51 0 016.5 13z"
+                          fill-rule="nonzero"
+                        ></path>
+                      </g>
+                    </svg>
+                  </a>
+                  <span
+                    class="
+                      hidden
+                      xl:block
+                      text-base
+                      font-bold
+                      cursor-pointer
+                      text-blue-1200
+                      pt-2
+                      px-3
+                    "
+                  >
+                    Search</span
+                  >
+                </div>
+                <div class="hidden md:flex md:pr-3 jusify-center px-4 mr-2">
+                  <a
+                    href="/"
+                    class="font-bold text-sm w-20 no-underline text-blue-1200"
+                    >Log in
+                  </a>
+                </div>
+                <div
+                  class="
+                    hidden
+                    md:flex
+                    jusify-center
+                    border
+                    rounded
+                    py-2.5
+                    px-4
+                    mr-3
+                  "
+                >
+                  <a
+                    href="/"
+                    class="font-bold text-sm no-underline text-blue-1200"
+                    >Join
+                  </a>
+                </div>
+                <div class="hidden md:flex jusify-center">
+                  <button
+                    class="
+                      inline-flex
+                      w-auto
+                      font-bold
+                      rounded
+                      py-2
+                      px-5
+                      h-10
+                      w-10
+                      bg-blue-1200
+                      cursor-pointer
+                      text-white-100
+                      mr-auto
+                    "
+                  >
+                    <span
+                      class="
+                        block
+                        text-center
+                        overflow-ellipsis
+                        text-base
+                        overflow-hidden
+                        m-auto
+                      "
+                    >
+                      New video
+                    </span>
+                    <span class="box-border">
+                      <svg viewBox="0 0 24 24" width="24px" height="24px">
+                        <path
+                          d="M12 15.5a1 1 0 0 1-.67-.26l-5-4.5 1.34-1.48L12 13.15l4.33-3.9 1.34 1.49-5 4.5a1 1 0 0 1-.67.26z"
+                          fill="#ffffff"
+                        ></path>
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="md:hidden">
+              <svg width="15" height="40" class="pt-3">
+                <g fill="#1A2E3A" fill-rule="evenodd">
+                  <path d="M10.892 10l4.014 4.459-.891.803L10 10.802z"></path>
+                  <path
+                    d="M6.5 11.817A5.327 5.327 0 0011.817 6.5 5.327 5.327 0 006.5 1.183 5.327 5.327 0 001.183 6.5 5.327 5.327 0 006.5 11.817zM6.5 13A6.51 6.51 0 010 6.5 6.51 6.51 0 016.5 0 6.51 6.51 0 0113 6.5 6.51 6.51 0 016.5 13z"
+                    fill-rule="nonzero"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1">
+            <a
+              href="#"
+              class="
+                text-blue-1200
+                block
+                px-3
+                py-2
+                rounded-md
+                text-base
+                font-medium
+              "
+              aria-current="page"
+              >Dashboard</a
+            >
+            <a
+              href="#"
+              class="
+                text-blue-1200
+                block
+                px-3
+                py-2
+                rounded-md
+                text-base
+                font-medium
+              "
+              >Team</a
+            >
+            <a
+              href="#"
+              class="
+                text-blue-1200
+                block
+                px-3
+                py-2
+                rounded-md
+                text-base
+                font-medium
+              "
+              >Projects</a
+            >
+            <a
+              href="#"
+              class="
+                text-blue-1200
+                block
+                px-3
+                py-2
+                rounded-md
+                text-base
+                font-medium
+              "
+              >Calendar</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="sm:w-full md:w-full overflow-hidden mt-15">
+      <section class="w-full mb-6">
+        <div class="pt-9 pb-5 box-border">
+          <div class="w-full flex justify-center thighter">
+            <div class="w-345 flex justify-center md:w-582">
+              <div>
+                <h1
+                  class="
+                    text-center
+                    sm:
+                    text-4xl
+                    font-bold
+                    mb-3
+                    md:text-6xl
+                    md:tracking-tighter
+                  "
+                >
+                  The power of video at your fingertips.
+                </h1>
+              </div>
+            </div>
+          </div>
+          <div class="w-full flex justify-center mb-6 md:mt-6">
+            <div class="w-3/12 w-252 md:w-530">
+              <h2 class="text-center text-xl">
+                Simple tools for you and your team to create, manage and share
+                high-quality videos.
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="w-full flex justify-center md:hidden">
+          <button
+            class="
+              box-border
+              container
+              mx-auto
+              max-w-sm
+              text-center
+              14px
+              font
+              size
+              border
+              rounded
+              text-sm
+              h-10
+              my-auto
+              bg-blue-1050
+              pt-2
+              leading-5
+            "
+          >
+            <span class="text-white-100 font-bold">Find a Plan</span>
+          </button>
+        </div>
+        <div class="w-full flex justify-center mt-3 md:hidden">
+          <button
+            class="
+              box-border
+              container
+              mx-auto
+              max-w-sm
+              text-center
+              14px
+              font
+              size
+              border border-gray-300
+              rounded
+              text-sm
+              h-10
+              my-auto
+              pt-2
+              leading-5
+            "
+          >
+            <span class="text-blue-150 font-bold">Join for free</span>
+          </button>
+        </div>
+      </section>
+      <div
+        class="hidden md:flex justify-center w-full mb-4 space-x-4 first:pt-20"
+      >
+        <div class="w-345 md:hidden">
+          <button class="">
+            <span class="text-white-150 text-center">Find a Plan </span>
+          </button>
+        </div>
+        <div class="w-auto flex space-x-3">
+          <div class="flex justify-center w-36 h-14 leading-5">
+            <button
+              class="
+                w-full
+                font-bold
+                px-7
+                rounded
+                border
+                bg-blue-1050
+                no-underline
+              "
+            >
+              <span class="text-white-100 font-bold text-center"
+                >See planes
+              </span>
+            </button>
+          </div>
+          <div class="flex justify-center">
+            <button
+              class="
+                w-36
+                h-14
+                leading-5
+                text-center
+                font-bold
+                py-2
+                px-6
+                rounded
+                w-48
+                border border-gray-300
+              "
+            >
+              <span class="text-blue-1200 font-bold text-center"
+                >Join for free
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="sm:w-full raltive -left-7 mt-16 md:hidden">
+        <picture>
+          <source
+            media="(min-width: 411px)"
+            srcset="
+              https://i.vimeocdn.com/custom_asset/1204?w=411 1x,
+              https://i.vimeocdn.com/custom_asset/1204?w=822 2x
+            "
+          />
+          <source
+            media="(min-width: 375px)"
+            srcset="
+              https://i.vimeocdn.com/custom_asset/1204?w=375 1x,
+              https://i.vimeocdn.com/custom_asset/1204?w=750 2x
+            "
+          />
+          <source
+            media="(min-width: 320px)"
+            srcset="
+              https://i.vimeocdn.com/custom_asset/1204?w=320 1x,
+              https://i.vimeocdn.com/custom_asset/1204?w=640 2x
+            "
+          />
+          <img
+            alt="Live"
+            streaming=""
+            analytics=""
+            interface=""
+            with=""
+            example=""
+            metrics=""
+            src="https://i.vimeocdn.com/custom_asset/1204"
+            loading="lazy"
+            width="100%"
+            height="100%"
+          />
+        </picture>
+      </div>
+      <div class="hidden md:block w-full box-border main">
+        <div class="flex mb-20 mx-auto lg:pt-20">
+          <div class="pt-20 lg:pr-24 relative">
+            <div class="img_wrapper -left-24 w-3/6 mr-20 pt-0 mt-0">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    https://i.vimeocdn.com/custom_asset/1205?w=640  1x,
+                    https://i.vimeocdn.com/custom_asset/1205?w=1280 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="
+                    https://i.vimeocdn.com/custom_asset/1205?w=512  1x,
+                    https://i.vimeocdn.com/custom_asset/1205?w=1024 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    https://i.vimeocdn.com/custom_asset/1205?w=384 1x,
+                    https://i.vimeocdn.com/custom_asset/1205?w=768 2x
+                  "
+                />
+                <img
+                  alt="Live streaming analytics interface with example metrics"
+                  src="https://i.vimeocdn.com/custom_asset/1205"
+                  loading="lazy"
+                  width="100%"
+                  height="100%"
+                />
+              </picture>
+            </div>
+          </div>
+
+          <div
+            class="
+              text_section
+              w-3/6
+              flex flex-col
+              justify-center
+              text-blue-1300
+              md:pt-28
+              lg:pt-5
+            "
+          >
+            <h2 class="font-bold text-4xl mb-0 tracking-mytightest">
+              Just add Live.
+            </h2>
+            <p class="mr-5 mb-5 mt-8 max- w-420 text-base">
+              Capture any moment with reliable, professional live streaming.
+            </p>
+            <a
+              class="raltive flex no-underline text-sm font-bold cursor-pointer"
+              href="/"
+            >
+              Go live
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 19"
+              >
+                <g fill="#1A2E3A" fillrule="evenodd">
+                  <path
+                    fillrule="nonzero"
+                    d="M12.566 8.51v1.061l-.53-.53.53-.53zm-3.56-2.45L10.065 5l4.066 4.066-4.066 4.066-1.06-1.06 3.004-3.006L9.005 6.06z"
+                  ></path>
+                  <path d="M5 8.35h8v1.5H5z"></path>
+                </g>
+              </svg>
+            </a>
+            <p class="mr-5 mb-5 mt-8 max- w-420 text-base">
+              Connect your entire team on one secure, enterprise-level video
+              platform.
+            </p>
+            <a
+              class="raltive flex no-underline text-sm font-bold cursor-pointer"
+              href="/"
+            >
+              Get Enterprise
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 19"
+              >
+                <g fill="#1A2E3A" fillrule="evenodd">
+                  <path
+                    fillrule="nonzero"
+                    d="M12.566 8.51v1.061l-.53-.53.53-.53zm-3.56-2.45L10.065 5l4.066 4.066-4.066 4.066-1.06-1.06 3.004-3.006L9.005 6.06z"
+                  ></path>
+                  <path d="M5 8.35h8v1.5H5z"></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="flex mx-auto mt-0 mb-20">
+          <div
+            class="
+              ml-auto
+              text_section
+              w-3/6
+              flex flex-col
+              justify-center
+              text-blue-1300
+              lg:pt-5
+            "
+          >
+            <h2 class="font-bold text-4xl w-259 mb-0 tracking-mytightest">
+              Your video starts here.
+            </h2>
+            <p class="mr-5 mb-5 mt-8 max- w-420 text-base">
+              Create standout social videos for your business instantly.
+            </p>
+            <a
+              class="raltive flex no-underline text-sm font-bold cursor-pointer"
+              href="/"
+            >
+              Try Vimeo Create
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 19"
+              >
+                <g fill="#1A2E3A" fillrule="evenodd">
+                  <path
+                    fillrule="nonzero"
+                    d="M12.566 8.51v1.061l-.53-.53.53-.53zm-3.56-2.45L10.065 5l4.066 4.066-4.066 4.066-1.06-1.06 3.004-3.006L9.005 6.06z"
+                  ></path>
+                  <path d="M5 8.35h8v1.5H5z"></path>
+                </g>
+              </svg>
+            </a>
+            <p class="mr-5 mb-5 mt-8 max- w-420 text-base">
+              Create standout social videos for your business instantly.
+            </p>
+            <a
+              class="raltive flex no-underline text-sm font-bold cursor-pointer"
+              href="/"
+            >
+              Try Vimeo Create
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 19"
+              >
+                <g fill="#1A2E3A" fillrule="evenodd">
+                  <path
+                    fillrule="nonzero"
+                    d="M12.566 8.51v1.061l-.53-.53.53-.53zm-3.56-2.45L10.065 5l4.066 4.066-4.066 4.066-1.06-1.06 3.004-3.006L9.005 6.06z"
+                  ></path>
+                  <path d="M5 8.35h8v1.5H5z"></path>
+                </g>
+              </svg>
+            </a>
+            <p class="mr-5 mb-5 mt-8 max- w-420 text-base">
+              Record video messages of your screen, your face, or both.
+            </p>
+            <a
+              class="raltive flex no-underline text-sm font-bold cursor-pointer"
+              href="/"
+            >
+              Try Vimeo Record
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 19"
+              >
+                <g fill="#1A2E3A" fillrule="evenodd">
+                  <path
+                    fillrule="nonzero"
+                    d="M12.566 8.51v1.061l-.53-.53.53-.53zm-3.56-2.45L10.065 5l4.066 4.066-4.066 4.066-1.06-1.06 3.004-3.006L9.005 6.06z"
+                  ></path>
+                  <path d="M5 8.35h8v1.5H5z"></path>
+                </g>
+              </svg>
+            </a>
+            <p class="mr-5 mb-5 mt-8 max- w-420 text-base">
+              Upload your latest cut in the highest quality possible.
+            </p>
+            <a
+              class="raltive flex no-underline text-sm font-bold cursor-pointer"
+              href="/"
+            >
+              Start uploading
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 19"
+              >
+                <g fill="#1A2E3A" fillrule="evenodd">
+                  <path
+                    fillrule="nonzero"
+                    d="M12.566 8.51v1.061l-.53-.53.53-.53zm-3.56-2.45L10.065 5l4.066 4.066-4.066 4.066-1.06-1.06 3.004-3.006L9.005 6.06z"
+                  ></path>
+                  <path d="M5 8.35h8v1.5H5z"></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="img_wrapper -right-24 w-3/6 ml-auto pt-0 mt-0">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  https://i.vimeocdn.com/custom_asset/976?w=640  1x,
+                  https://i.vimeocdn.com/custom_asset/976?w=1280 2x
+                "
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  https://i.vimeocdn.com/custom_asset/976?w=512  1x,
+                  https://i.vimeocdn.com/custom_asset/976?w=1024 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  https://i.vimeocdn.com/custom_asset/976?w=384 1x,
+                  https://i.vimeocdn.com/custom_asset/976?w=768 2x
+                "
+              />
+              <img
+                alt="Interface of video maker text editing capabilities"
+                src="https://i.vimeocdn.com/custom_asset/976"
+                loading="lazy"
+                width="100%"
+                height="100%"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="flex mb-20 mx-auto lg:pt-20">
+          <div class="pt-20 lg:pr-24 relative">
+            <div class="img_wrapper -left-24 w-3/6 mr-20 pt-0 mt-0">
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    https://i.vimeocdn.com/custom_asset/956?w=640  1x,
+                    https://i.vimeocdn.com/custom_asset/956?w=1280 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1024px)"
+                  srcset="
+                    https://i.vimeocdn.com/custom_asset/956?w=512  1x,
+                    https://i.vimeocdn.com/custom_asset/956?w=1024 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    https://i.vimeocdn.com/custom_asset/956?w=384 1x,
+                    https://i.vimeocdn.com/custom_asset/956?w=768 2x
+                  "
+                />
+                <img
+                  alt="Mobile video analytics interface of The North Face Faceboook post example"
+                  src="https://i.vimeocdn.com/custom_asset/956"
+                  loading="lazy"
+                  width="100%"
+                  height="100%"
+                />
+              </picture>
+            </div>
+          </div>
+          <div
+            class="
+              text_section
+              w-3/6
+              flex flex-col
+              justify-center
+              text-blue-1300
+              md:pt-28
+              lg:pt-5
+            "
+          >
+            <h2 class="font-bold text-4xl mb-0 tracking-mytightest max- w-420">
+              Publish anywhere, grow everywhere.
+            </h2>
+            <p class="mr-5 mb-5 mt-8 max- w-420 text-base">
+              Publish videos to any channel, customize the player and add
+              powerful marketing tools to bump up engagement.
+            </p>
+            <a
+              class="raltive flex no-underline text-sm font-bold cursor-pointer"
+              href="/"
+            >
+              Grow your audience
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 19"
+              >
+                <g fill="#1A2E3A" fillrule="evenodd">
+                  <path
+                    fillrule="nonzero"
+                    d="M12.566 8.51v1.061l-.53-.53.53-.53zm-3.56-2.45L10.065 5l4.066 4.066-4.066 4.066-1.06-1.06 3.004-3.006L9.005 6.06z"
+                  ></path>
+                  <path d="M5 8.35h8v1.5H5z"></path>
+                </g>
+              </svg>
+            </a>
+            <p class="mr-5 mb-5 mt-8 w-420 text-base">
+              See how your videos are performing with advanced analytics.
+            </p>
+            <a
+              class="raltive flex no-underline text-sm font-bold cursor-pointer"
+              href="/"
+            >
+              Track engagement
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 19"
+              >
+                <g fill="#1A2E3A" fillrule="evenodd">
+                  <path
+                    fillrule="nonzero"
+                    d="M12.566 8.51v1.061l-.53-.53.53-.53zm-3.56-2.45L10.065 5l4.066 4.066-4.066 4.066-1.06-1.06 3.004-3.006L9.005 6.06z"
+                  ></path>
+                  <path d="M5 8.35h8v1.5H5z"></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="flex mx-auto mt-0">
+          <div
+            class="
+              ml-auto
+              text_section
+              w-3/6
+              flex flex-col
+              justify-center
+              text-blue-1300
+              lg:pt-5
+            "
+          >
+            <h2 class="font-bold text-4xl w-259 mb-0 tracking-mytightest">
+              Simple, creative collaboration.
+            </h2>
+            <p class="mr-5 mb-5 mt-8 w-420 text-base">
+              Streamline feedback with time-coded comments, and assemble your
+              team on your terms.
+            </p>
+            <a
+              class="raltive flex no-underline text-sm font-bold cursor-pointer"
+              href="/"
+            >
+              Start collaborating
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 19"
+              >
+                <g fill="#1A2E3A" fillrule="evenodd">
+                  <path
+                    fillrule="nonzero"
+                    d="M12.566 8.51v1.061l-.53-.53.53-.53zm-3.56-2.45L10.065 5l4.066 4.066-4.066 4.066-1.06-1.06 3.004-3.006L9.005 6.06z"
+                  ></path>
+                  <path d="M5 8.35h8v1.5H5z"></path>
+                </g>
+              </svg>
+            </a>
+            <p class="mr-5 mb-5 mt-8 w-420 text-base">
+              Share securely with comprehensive privacy options.
+            </p>
+            <a
+              class="raltive flex no-underline text-sm font-bold cursor-pointer"
+              href="/"
+            >
+              See privacy options
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 19"
+              >
+                <g fill="#1A2E3A" fillrule="evenodd">
+                  <path
+                    fillrule="nonzero"
+                    d="M12.566 8.51v1.061l-.53-.53.53-.53zm-3.56-2.45L10.065 5l4.066 4.066-4.066 4.066-1.06-1.06 3.004-3.006L9.005 6.06z"
+                  ></path>
+                  <path d="M5 8.35h8v1.5H5z"></path>
+                </g>
+              </svg>
+            </a>
+            <p class="mr-5 mb-5 mt-8 w-420 text-base">
+              Record video messages of your screen, your face, or both.
+            </p>
+            <a
+              class="raltive flex no-underline text-sm font-bold cursor-pointer"
+              href="/"
+            >
+              Try Vimeo Record
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 19"
+              >
+                <g fill="#1A2E3A" fillrule="evenodd">
+                  <path
+                    fillrule="nonzero"
+                    d="M12.566 8.51v1.061l-.53-.53.53-.53zm-3.56-2.45L10.065 5l4.066 4.066-4.066 4.066-1.06-1.06 3.004-3.006L9.005 6.06z"
+                  ></path>
+                  <path d="M5 8.35h8v1.5H5z"></path>
+                </g>
+              </svg>
+            </a>
+            <p class="mr-5 mb-5 mt-8 w-420 text-base">
+              Upload your latest cut in the highest quality possible.
+            </p>
+            <a
+              class="raltive flex no-underline text-sm font-bold cursor-pointer"
+              href="/"
+            >
+              Start uploading
+              <svg
+                class="w-5 h-5"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 19"
+              >
+                <g fill="#1A2E3A" fillrule="evenodd">
+                  <path
+                    fillrule="nonzero"
+                    d="M12.566 8.51v1.061l-.53-.53.53-.53zm-3.56-2.45L10.065 5l4.066 4.066-4.066 4.066-1.06-1.06 3.004-3.006L9.005 6.06z"
+                  ></path>
+                  <path d="M5 8.35h8v1.5H5z"></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="img_wrapper -right-24 w-3/6 ml-auto pt-0 mt-0">
+            <picture>
+              <source
+                media="(min-width: 1280px)"
+                srcset="
+                  https://i.vimeocdn.com/custom_asset/957?w=640  1x,
+                  https://i.vimeocdn.com/custom_asset/957?w=1280 2x
+                "
+              />
+              <source
+                media="(min-width: 1024px)"
+                srcset="
+                  https://i.vimeocdn.com/custom_asset/957?w=512  1x,
+                  https://i.vimeocdn.com/custom_asset/957?w=1024 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  https://i.vimeocdn.com/custom_asset/957?w=384 1x,
+                  https://i.vimeocdn.com/custom_asset/957?w=768 2x
+                "
+              />
+              <img
+                alt="Video review tool interface example of comments time coded on video"
+                src="https://i.vimeocdn.com/custom_asset/957"
+                loading="lazy"
+                width="100%"
+                height="100%"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="sm:hidden md:block w-570 mx-auto text-center mt-20 mb-20">
+          <h3 class="pt-0 w-auto text-blue-1300 text-4xl mb-8 font-bold">
+            Try Vimeo free for 30 days.
+          </h3>
+          <div
+            class="
+              text-center
+              inline-block
+              w-1/3
+              bg-blue-850
+              border
+              rounded
+              px-1
+              text-white-150 text-sm0
+              py-2
+            "
+          >
+            <a
+              class="
+                raltive
+                w-full
+                p-0
+                outline-none
+                justify-center
+                m-auto
+                h-10
+                no-underline
+                leading-5
+              "
+              href="/"
+            ></a>
+            <span
+              class="
+                absolute
+                bg-transparent
+                top-0
+                left-0text-white-100
+                w-full
+                h-full
+                rounded
+              "
+            >
+            </span>
+            <span
+              class="
+                text-white-100
+                font-bold
+                leading-6
+                text-center
+                cursor-pointer
+                px-10
+                py-2
+              "
+            >
+              Get started
+            </span>
+          </div>
+        </div>
+        <div class="hidden md:flex w-full flex-wrap">
+          <section
+            class="
+              text-transparent
+              hover:text-white-150 hover:text-sm
+              z-10
+              box-border
+              flex flex-wrap
+              relative
+              md:max-w-1/2
+              lg:max-w-1/3
+            "
+          >
+            <a href="/">
+              <img
+                class="w-full object-cover object-center z-10"
+                src="https://vimeo.com/assets/images_v6/lohp/video1_thumbnail.png"
+                alt=""
+              />
+              <div
+                class="
+                  absolute
+                  w-full
+                  h-full
+                  top-0
+                  left-0
+                  bg-blue-1300 bg-opacity-0
+                  transition
+                  duration-200
+                  ease-in-out
+                "
+              ></div>
+              <div class="hidden md:flex absolute bottom-4 left-4">
+                <div class="logo mr-2 w-16 h-16 z-20">
+                  <img
+                    src="https://vimeo.com/assets/images_v6/lohp/video1_avatar.png"
+                    alt="The North face"
+                    width="60"
+                    height="60"
+                  />
+                </div>
+                <div class="z-20 mt-5">
+                  <div class="">
+                    <span> Video from <strong>The North face</strong> </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </section>
+          <section
+            class="
+              text-transparent
+              hover:text-white-150 hover:text-sm
+              z-10
+              box-border
+              flex flex-wrap
+              relative
+              md:max-w-1/2
+              lg:max-w-1/3
+            "
+          >
+            <a href="/">
+              <img
+                class="w-full object-cover object-center z-10"
+                src="https://vimeo.com/assets/images_v6/lohp/video2_thumbnail.png"
+                alt=""
+              />
+              <div class="hidden md:flex absolute bottom-4 left-4">
+                <div class="logo mr-2 w-16 h-16 z-20">
+                  <img
+                    src="https://vimeo.com/assets/images_v6/lohp/video2_avatar.png"
+                    alt="The North face"
+                    width="60"
+                    height="60"
+                  />
+                </div>
+                <div class="z-20 mt-5">
+                  <div class="">
+                    <span> Video from <strong>The North face</strong> </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </section>
+          <section
+            class="
+              text-transparent
+              hover:text-white-150 hover:text-sm
+              z-10
+              box-border
+              flex flex-wrap
+              relative
+              md:max-w-1/2
+              lg:max-w-1/3
+            "
+          >
+            <a href="/">
+              <img
+                class="w-full object-cover object-center z-10"
+                src="https://vimeo.com/assets/images_v6/lohp/video3_thumbnail.png"
+                alt=""
+              />
+              <div class="hidden md:flex absolute bottom-4 left-4">
+                <div class="logo mr-2 w-16 h-16 z-20">
+                  <img
+                    src="https://vimeo.com/assets/images_v6/lohp/video3_avatar.png"
+                    alt="The North face"
+                    width="60"
+                    height="60"
+                  />
+                </div>
+                <div class="z-20 mt-5">
+                  <div class="">
+                    <span> Video from <strong>The North face</strong> </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </section>
+          <section
+            class="
+              text-transparent
+              hover:text-white-150 hover:text-sm
+              z-10
+              box-border
+              flex flex-wrap
+              relative
+              md:max-w-1/2
+              lg:max-w-1/3
+            "
+          >
+            <a href="/">
+              <img
+                class="w-full object-cover object-center z-10"
+                src="https://vimeo.com/assets/images_v6/lohp/video4_thumbnail.png"
+                alt=""
+              />
+              <div class="hidden md:flex absolute bottom-4 left-4">
+                <div class="logo mr-2 w-16 h-16 z-20">
+                  <img
+                    src="https://vimeo.com/assets/images_v6/lohp/video4_avatar.png"
+                    alt="The North face"
+                    width="60"
+                    height="60"
+                  />
+                </div>
+                <div class="z-20 mt-5">
+                  <div class="">
+                    <span> Video from <strong>The North face</strong> </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </section>
+          <section
+            class="
+              text-transparent
+              hover:text-white-150 hover:text-sm
+              z-10
+              box-border
+              flex flex-wrap
+              relative
+              md:max-w-1/2
+              lg:max-w-1/3
+            "
+          >
+            <a href="/">
+              <img
+                class="w-full object-cover object-center z-10"
+                src="https://vimeo.com/assets/images_v6/lohp/video5_thumbnail.png"
+                alt=""
+              />
+              <div class="hidden md:flex absolute bottom-4 left-4">
+                <div class="logo mr-2 w-16 h-16 z-20">
+                  <img
+                    src="https://vimeo.com/assets/images_v6/lohp/video5_avatar.png"
+                    alt="The North face"
+                    width="60"
+                    height="60"
+                  />
+                </div>
+                <div class="z-20 mt-5">
+                  <div class="">
+                    <span> Video from <strong>The North face</strong> </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </section>
+          <section
+            class="
+              text-transparent
+              hover:text-white-150 hover:text-sm
+              z-10
+              box-border
+              flex flex-wrap
+              relative
+              md:max-w-1/2
+              lg:max-w-1/3
+            "
+          >
+            <a href="/">
+              <img
+                class="w-full object-cover object-center z-10"
+                src="https://vimeo.com/assets/images_v6/lohp/video6_thumbnail.png"
+                alt=""
+              />
+              <div class="hidden md:flex absolute bottom-4 left-4">
+                <div class="logo mr-2 w-16 h-16 z-20">
+                  <img
+                    src="https://vimeo.com/assets/images_v6/lohp/video6_avatar.png"
+                    alt="The North face"
+                    width="60"
+                    height="60"
+                  />
+                </div>
+                <div class="z-20 mt-5">
+                  <div class="">
+                    <span> Video from <strong>The North face</strong> </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="w-full relative bg-blue-1200 py-6 px-3">
+      <div class="w-full flex justify-center">
+        <section class="flex-grow">
+          <svg
+            width="109"
+            height="40"
+            viewBox="0 0 109 31"
+            class="pb-2 mx-auto md:m-1 md:pb-2"
+          >
+            <path
+              d="M88.24 23.443a11.978 11.978 0 01-.054-.678c-.184-3.124.947-5.995 3.394-8.61 2.627-2.905 5.929-4.358 9.908-4.358 2.553 0 4.487.855 5.801 2.561 1.242 1.563 1.807 3.578 1.698 6.047-.147 3.342-1.387 6.23-3.723 8.663-2.335 2.434-5.237 3.65-8.704 3.65-2.882 0-5.072-.926-6.568-2.78a7.757 7.757 0 01-.871-1.372 34.1 34.1 0 01-1.235.727c-3.868 2.217-7.792 3.323-11.769 3.323-2.956 0-5.074-.982-6.35-2.945a7.353 7.353 0 01-.266-.422 21.55 21.55 0 01-.117.103c-2.446 2.108-4.89 3.162-7.335 3.162-2.374 0-3.522-1.307-3.45-3.926.036-1.164.265-2.562.684-4.198.42-1.636.648-2.909.685-3.818.037-1.38-.384-2.073-1.264-2.073-.952 0-2.086 1.13-3.404 3.384-1.392 2.365-2.144 4.656-2.252 6.874-.074 1.566.08 2.767.46 3.603-2.546.073-4.33-.346-5.348-1.256-.911-.8-1.33-2.126-1.255-3.983a14.67 14.67 0 01.537-3.492c.321-1.164.5-2.2.537-3.11.074-1.347-.42-2.02-1.48-2.02-.915 0-1.902 1.038-2.96 3.111-1.06 2.073-1.645 4.239-1.754 6.494-.073 2.037.058 3.455.392 4.256-2.505.073-4.284-.454-5.337-1.58-.48-.518-.817-1.185-1.01-2.002-.205.194-.415.386-.631.574-2.446 2.108-4.89 3.162-7.335 3.162-1.133 0-2-.363-2.601-1.09-.602-.728-.885-1.672-.848-2.836.035-1.199.41-3.053 1.121-5.562.712-2.508 1.069-3.854 1.069-4.036 0-.944-.33-1.417-.985-1.417-.207 0-.77.34-1.69 1.016-.693 2.067-2.205 4.595-4.535 7.584-3.315 4.295-6.119 6.443-8.413 6.443-1.42 0-2.624-1.307-3.606-3.924L5.41 19.497c-.73-2.615-1.512-3.924-2.349-3.924-.182 0-.82.383-1.913 1.145L0 15.244a309.082 309.082 0 003.558-3.163c1.604-1.383 2.809-2.11 3.612-2.183 1.897-.182 3.065 1.111 3.503 3.88.474 2.986.802 4.844.986 5.57.547 2.479 1.148 3.716 1.806 3.716.51 0 1.276-.803 2.298-2.41 1.021-1.608 1.568-2.831 1.642-3.672.146-1.387-.401-2.082-1.642-2.082-.583 0-1.185.134-1.804.399 1.198-3.914 3.487-5.814 6.866-5.706 2.256.066 3.438 1.387 3.546 3.961L26 12.081c1.57-1.383 2.738-2.11 3.506-2.183 1.203-.109 2.088.244 2.654 1.06.564.816.774 1.875.63 3.18-.475 2.212-.987 5.02-1.534 8.425-.037 1.56.53 2.338 1.697 2.338.51 0 1.422-.537 2.737-1.615l.049-.04c.083-.76.218-1.662.405-2.708.3-1.687.468-3 .504-3.945.072-.652-.093-.979-.493-.979-.22 0-.84.369-1.862 1.104l-1.314-1.473c.183-.144 1.331-1.2 3.45-3.164 1.532-1.418 2.572-2.145 3.119-2.182.949-.073 1.715.318 2.299 1.172.584.855.876 1.847.876 2.974 0 .364-.036.71-.108 1.037a10.044 10.044 0 011.916-2.183c1.678-1.455 3.558-2.274 5.638-2.456 1.788-.145 3.064.273 3.833 1.255.619.8.91 1.947.875 3.438a73.7 73.7 0 00.822-.71c.838-.982 1.659-1.763 2.462-2.345 1.35-.982 2.756-1.528 4.215-1.638 1.752-.145 3.01.271 3.777 1.25.656.798.949 1.94.877 3.424-.037 1.015-.284 2.492-.74 4.431-.457 1.94-.684 3.052-.684 3.342-.037.763.037 1.287.22 1.577.181.29.618.434 1.313.434.311 0 .773-.2 1.385-.602a9.877 9.877 0 01-.072-1.43c.035-2.945 1.35-5.745 3.942-8.401 2.845-2.909 6.203-4.365 10.072-4.365 3.576 0 5.474 1.453 5.693 4.355.145 1.85-.877 3.755-3.065 5.715-2.337 2.142-5.276 3.502-8.815 4.082.656.908 1.641 1.36 2.956 1.36 2.627 0 5.492-.664 8.596-1.997.138-.058.274-.117.408-.175zm14.56-5.244c.038-.984-.1-1.886-.41-2.706-.31-.82-.758-1.23-1.341-1.23-1.862 0-3.395 1.002-4.597 3.007-1.024 1.64-1.571 3.39-1.643 5.247-.037.912.128 1.714.492 2.406.4.803.966 1.203 1.697 1.203 1.642 0 3.048-.965 4.216-2.898.985-1.604 1.513-3.28 1.587-5.029zm-21.1-1.834c.035-.976-.365-1.465-1.203-1.465-1.094 0-2.204.751-3.334 2.253-1.13 1.502-1.713 2.94-1.748 4.315-.021 0-.021.236 0 .706a12.322 12.322 0 004.645-2.985c1.056-1.157 1.603-2.1 1.64-2.824zM34.651 2.714c-.036.906-.492 1.775-1.369 2.607-.985.941-2.153 1.412-3.503 1.412-2.08 0-3.084-.905-3.011-2.715.035-.94.592-1.846 1.669-2.715C29.513.435 30.708 0 32.023 0c.766 0 1.405.3 1.917.896.51.598.747 1.204.711 1.818z"
+              fill="#FFF"
+              fill-rule="evenodd"
+            ></path>
+          </svg>
+        </section>
+
+        <div class="hidden lg:block lg:pt-3 flex-grow">
+          <div class="flex justify-between links">
+            <section class="">
+              <h4><span class="text-white-250 text-sm">Product</span></h4>
+              <li class="list-none py-1">
+                <a class="text-sm text-white-150 no-underline" href="/">
+                  Video Player
+                </a>
+              </li>
+              <li class="list-none py-1">
+                <a class="text-sm text-white-150 no-underline" href="/">
+                  Create
+                </a>
+              </li>
+              <li class="list-none py-1">
+                <a class="text-sm text-white-150 no-underline" href="/">
+                  Live Streaming
+                </a>
+              </li>
+              <li class="list-none py-1">
+                <a class="text-sm text-white-150 no-underline" href="/">
+                  Screen Recorder
+                </a>
+              </li>
+              <li class="list-none py-1">
+                <a class="text-sm text-white-150 no-underline" href="/">
+                  Privacy
+                </a>
+              </li>
+              <li class="list-none py-1">
+                <a class="text-sm text-white-150 no-underline" href="/">
+                  Collaboration
+                </a>
+              </li>
+              <li class="list-none py-1">
+                <a class="text-sm text-white-150 no-underline" href="/;">
+                  Distribution &amp; Marketing
+                </a>
+              </li>
+              <li class="list-none py-1">
+                <a class="text-sm text-white-150 no-underline" href="/">
+                  Monetization
+                </a>
+              </li>
+              <li class="list-none py-1">
+                <a class="text-sm text-white-150 no-underline" href="/">
+                  Analytics
+                </a>
+              </li>
+              <li class="list-none py-1">
+                <a class="text-sm text-white-150 no-underline" href="/">
+                  Hosting &amp; Management
+                </a>
+              </li>
+              <li class="list-none py-1">
+                <a class="text-sm text-white-150 no-underline" href="/stock">
+                  Stock
+                </a>
+              </li>
+              <li class="list-none py-1">
+                <a class="text-sm text-white-150 no-underline" href="/">
+                  For Hire
+                </a>
+              </li>
+            </section>
+            <section class="text-white-250 text-sm">
+              <h4>Resources</h4>
+              <ul>
+                <li class="list-none py-1">
+                  <a class="text-white-150 no-underline" href="/">
+                    Help Center
+                  </a>
+                </li>
+                <li class="list-none py-1">
+                  <a class="text-white-150 no-underline" href="/"> Blog </a>
+                </li>
+                <li class="list-none py-1">
+                  <a class="text-white-150 no-underline" href="/">
+                    Video School
+                  </a>
+                </li>
+                <li class="list-none py-1">
+                  <a class="text-white-150 no-underline" href="/">
+                    OTT Resources
+                  </a>
+                </li>
+                <li class="list-none py-1">
+                  <a class="text-white-150 no-underline" href="/">
+                    Developers
+                  </a>
+                </li>
+                <li class="list-none py-1">
+                  <a class="text-white-150 no-underline" href="/"> Students </a>
+                </li>
+                <li class="list-none py-1">
+                  <a class="text-white-150 no-underline" href="/">
+                    Become a Partner
+                  </a>
+                </li>
+                <li class="list-none py-1">
+                  <a class="text-white-150 no-underline" href="/">
+                    Guidelines
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <section class="text-white-250 text-sm">
+              <h4>Apps</h4>
+              <ul>
+                <li class="list-none py-1">
+                  <a class="text-white-150 no-underline" href="/">
+                    Vimeo for macOS
+                  </a>
+                </li>
+                <li class="list-none py-1">
+                  <a class="text-white-150 no-underline" href="/">
+                    Vimeo for iOS
+                  </a>
+                </li>
+                <li class="list-none py-1">
+                  <a class="text-white-150 no-underline" href="/">
+                    Vimeo for Android
+                  </a>
+                </li>
+                <li class="list-none py-1">
+                  <a class="text-white-150 no-underline" href="/">
+                    Vimeo Create for iOS
+                  </a>
+                </li>
+                <li class="list-none py-1">
+                  <a class="text-white-150 no-underline" href="/">
+                    Vimeo Create for Android
+                  </a>
+                </li>
+                <li class="list-none py-1">
+                  <a class="text-white-150 no-underline" href="/"> Magisto </a>
+                </li>
+                <li class="list-none py-1">
+                  <a class="text-white-150 no-underline" href="/">
+                    Vimeo for Shopify
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <section class="text-white-250 text-sm">
+              <h4>Vimeo</h4>
+              <ul>
+                <li class="list-none py-1">
+                  <a
+                    class="no-underline text-white-150"
+                    href="/upgrade"
+                    data-fatal-attraction=""
+                  >
+                    Pricing
+                  </a>
+                </li>
+                <li class="list-none py-1">
+                  <a class="no-underline text-white-150" href="/"> Upload </a>
+                </li>
+                <li class="list-none py-1">
+                  <a class="no-underline text-white-150" href="/">
+                    Staff Picks
+                  </a>
+                </li>
+                <li class="list-none py-1">
+                  <a class="no-underline text-white-150" href="/">
+                    On Demand
+                  </a>
+                </li>
+                <li class="list-none py-1">
+                  <a class="no-underline text-white-150" href=""> Vimeo OTT </a>
+                </li>
+                <li class="list-none py-1">
+                  <a class="no-underline text-white-150" href="/"> Site map </a>
+                </li>
+                <li class="list-none py-1">
+                  <a class="no-underline text-white-150" href="/"> About </a>
+                </li>
+                <li class="list-none py-1">
+                  <a class="no-underline text-white-150" href="/"> Jobs </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <div
+          class="hidden lg:block flex-grow h-10 text-transparent flex-initial"
+        >
+          hello
+        </div>
+      </div>
+      <div class="block lg:hidden">
+        <div class="block">
+          <div class="w-full py-2">
+            <section class="w-full">
+              <h4 class="flex justify-between py-2">
+                <div class="flex justify-center">
+                  <span class="text-xl text-white-150"> Product </span>
+                </div>
+                <div class="">
+                  <svg
+                    class="block w-3 h-3"
+                    fill="#879CAB"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 8 8"
+                  >
+                    <path
+                      d="M7.707 2.293c-.39-.39-1.024-.39-1.414 0L4 4.586 1.707 2.293c-.39-.39-1.024-.39-1.414 0-.39.39-.39 1.024 0 1.414l3 3c.39.39 1.024.39 1.414 0l3-3c.39-.39.39-1.024 0-1.414z"
+                    ></path>
+                  </svg>
+                </div>
+              </h4>
+              <hr />
+            </section>
+          </div>
+          <div class="w-full py-2">
+            <section class="w-full">
+              <h4 class="flex justify-between py-2">
+                <div class="flex justify-center">
+                  <span class="text-xl text-white-150"> Resources </span>
+                </div>
+                <div class="">
+                  <svg
+                    class="block w-3 h-3"
+                    fill="#879CAB"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 8 8"
+                  >
+                    <path
+                      d="M7.707 2.293c-.39-.39-1.024-.39-1.414 0L4 4.586 1.707 2.293c-.39-.39-1.024-.39-1.414 0-.39.39-.39 1.024 0 1.414l3 3c.39.39 1.024.39 1.414 0l3-3c.39-.39.39-1.024 0-1.414z"
+                    ></path>
+                  </svg>
+                </div>
+              </h4>
+              <hr />
+            </section>
+          </div>
+          <div class="w-full py-2">
+            <section class="w-full">
+              <h4 class="flex justify-between py-1">
+                <div class="flex justify-center">
+                  <span class="text-xl text-white-150"> Apps </span>
+                </div>
+                <div class="">
+                  <svg
+                    class="block w-3 h-3"
+                    fill="#879CAB"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 8 8"
+                  >
+                    <path
+                      d="M7.707 2.293c-.39-.39-1.024-.39-1.414 0L4 4.586 1.707 2.293c-.39-.39-1.024-.39-1.414 0-.39.39-.39 1.024 0 1.414l3 3c.39.39 1.024.39 1.414 0l3-3c.39-.39.39-1.024 0-1.414z"
+                    ></path>
+                  </svg>
+                </div>
+              </h4>
+              <hr />
+            </section>
+          </div>
+          <div class="w-full py-2">
+            <section class="w-full">
+              <h4 class="flex justify-between py-2">
+                <div class="flex justify-center">
+                  <span class="text-xl text-white-150"> Vimeo </span>
+                </div>
+                <div class="">
+                  <svg
+                    class="block w-3 h-3"
+                    fill="#879CAB"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 8 8"
+                  >
+                    <path
+                      d="M7.707 2.293c-.39-.39-1.024-.39-1.414 0L4 4.586 1.707 2.293c-.39-.39-1.024-.39-1.414 0-.39.39-.39 1.024 0 1.414l3 3c.39.39 1.024.39 1.414 0l3-3c.39-.39.39-1.024 0-1.414z"
+                    ></path>
+                  </svg>
+                </div>
+              </h4>
+            </section>
+          </div>
+        </div>
+        <section
+          class="box-border pt-5 px-6 pb-11 raltive text-white-150 text-sm"
+        >
+          <div class="flex justify-center">
+            <div>
+              <p>© 2021 Vimeo, Inc. All rights reserved.</p>
+            </div>
+          </div>
+          <div class="flex w-full justify-center my-6">
+            <div class="flex flex-wrap justify-center w-5/12 sm:w-345">
+              <div class="px-1">Terms</div>
+              <div class="px-1">|</div>
+              <div class="px-1">Privacy</div>
+              <div class="px-1">|</div>
+              <div class="px-1">Copyright</div>
+              <div class="px-1">|</div>
+              <div class="px-1">CA Privacy</div>
+              <div class="px-1">|</div>
+              <div class="px-1">Cookies</div>
+            </div>
+          </div>
+          <div class="flex justify-center">
+            <span class="h-8 w-20 text-center">Language: </span>
+            <div class="text-blue-1200">
+              <select class="h-5" name="" id="">
+                <option value="en" selected="">English</option>
+                <option value="es">Español</option>
+                <option value="de-DE">Deutsch</option>
+                <option value="fr-FR">Français</option>
+                <option value="ja-JP">日本語</option>
+                <option value="pt-BR">Português</option>
+                <option value="ko-KR">한국어</option>
+              </select>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="hidden lg:flex w-full justify-between pt-14">
+        <div class="flex px-10">
+          <div class="px-1 text-white-150 text-sm">
+            © 2021 Vimeo, Inc. All rights reserved.
+          </div>
+          <div class="px-1 text-white-150 text-sm">Terms</div>
+          <div class="px-1 text-white-150 text-sm">|</div>
+          <div class="px-1 text-white-150 text-sm">Privacy</div>
+          <div class="px-1 text-white-150 text-sm">|</div>
+          <div class="px-1 text-white-150 text-sm">Copyright</div>
+          <div class="px-1 text-white-150 text-sm">|</div>
+          <div class="px-1 text-white-150 text-sm">CA Privacy</div>
+          <div class="px-1 text-white-150 text-sm">|</div>
+          <div class="px-1 text-white-150 text-sm">Cookies</div>
+        </div>
+        <div class="flex justify-center px-10">
+          <span class="h-8 w-20 text-center text-sm text-white-150 pt-1"
+            >Language:
+          </span>
+          <div class="">
+            <select class="text-blue-1200 h-5" name="" id="">
+              <option value="en" selected="">English</option>
+              <option value="es">Español</option>
+              <option value="de-DE">Deutsch</option>
+              <option value="fr-FR">Français</option>
+              <option value="ja-JP">日本語</option>
+              <option value="pt-BR">Português</option>
+              <option value="ko-KR">한국어</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="bundle.js"></script>
+  </body>
+</html>
