@@ -7,7 +7,7 @@ web design of Vimeo
 
 
 ## Version
- nodejs-v12.16.1
+ nodejs:12.16.1
 
 ## Installation
 
